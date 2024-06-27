@@ -1,10 +1,8 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <main className="min-h-screen w-full p-7">
-      <div className="mx-auto my-10 flex w-full max-w-screen-lg justify-center gap-10 font-light">
-        <div className="shrink-0">
+      <div className="mx-auto my-10 mt-20 grid h-full w-full max-w-screen-lg gap-10 font-light md:mt-80">
+        <div>
           <h2 className="mb-3 text-5xl font-bold">Hi, I&apos;m Dhondup</h2>
           <p className="mb-2 text-lg ">
             A frontend developer based in Australia.
@@ -31,11 +29,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <ul>
-        <li>
-          <Link href="/booking">Booking</Link>
-        </li>
-      </ul>
     </main>
   );
 }
