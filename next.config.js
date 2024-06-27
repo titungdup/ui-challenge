@@ -2,6 +2,14 @@
 const nextConfig = {
   experimental: {
     useLightningcss: true,
+    turbo: {
+      rules: {
+        "*.svg": {
+          loaders: ["@svgr/webpack"],
+          as: "*.js",
+        },
+      },
+    },
   },
 };
 

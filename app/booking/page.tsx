@@ -3,7 +3,7 @@ import CrossIcon from "@/public/icons/icon-cross-small.svg";
 
 const BookingCard = () => {
   return (
-    <div className="w-full max-w-sm rounded-xl bg-blue-900 px-8 py-6 text-white shadow-lg">
+    <div className="w-full max-w-sm rounded-xl bg-blue-500 px-8 py-6 text-white shadow-lg">
       <div className="flex flex-wrap justify-between gap-6">
         <div>
           <p className="mb-1 font-bold">Pilates</p>
@@ -27,6 +27,7 @@ const BookingCard = () => {
                   src="/images/profile-1.jpeg"
                   alt="User image"
                   fill={true}
+                  sizes="100%"
                 />
               </div>
             </div>
@@ -42,10 +43,10 @@ const Booking = () => {
   return (
     <div className="grid h-screen w-full place-items-center px-4">
       <div className="w-full max-w-xl overflow-hidden rounded-xl shadow-lg">
-        <div className="flex items-center justify-between bg-blue-900 p-4 px-6 font-medium text-white">
+        <div className="flex items-center justify-between bg-blue-800 p-4 px-6 font-medium text-white">
           <h2 className="text-xl">Book a training</h2>
           <button className="relative h-8 w-8">
-            <Image src={CrossIcon} alt="Icon to close" fill={true} />
+            <CrossIcon className="text-3xl" />
           </button>
         </div>
         <div className="flex flex-col items-center gap-9 px-10 pb-12 pt-7">
